@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI 6</title>
+</head>
+<body>
+    <style>
+        html, body{
+            margin:0;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        .Header{
+            padding: 20px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .Footer {
+        clear: left;
+        background-color: #EECBF3;
+        padding: 20px;
+        text-align: center;
+        }
+        @media screen and (max-width: 2048px) {
+            .content{
+            background-color: aqua;
+            float:left;
+            width:70%;
+            height: 500px;
+            padding:20px;
+            text-align: center;
+        }
+        .aside{
+            background-color: pink;
+            float:left;
+            width:30%;
+            height:500px;
+            padding :20px;
+            text-align: center;
+        }
+        .section2 .box:nth-child(4)
+        {
+            margin-right: 0;
+        }
+        .box{
+            width: calc(100%/4 - 10px);
+            background-color: beige;
+            height:150px;
+            padding:20px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float:left;
+            margin-right: calc(40px/3);
+        }
+        }
+
+        @media screen and (max-width: 768px)
+        {
+        .content{
+            width:100%;
+        }
+        .aside{
+            width:100%;
+        }
+        .section2 .box:nth-child(2)
+        {
+            margin-right: 0;
+        }
+
+        .box{
+            width: calc(100%/2 - 10px);
+            background-color: beige;
+            /* height: 100px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float:left;
+            margin-right: calc(40px/2); */
+        }
+        }
+
+
+        @media (max-width: 480px){
+        .box{
+            width:100%;
+            margin-right:0;
+
+        }
+        }
+        
+        
+        
+        /* .clear-fix{
+            clear:both;
+        } */
+        
+    </style>
+
+
+    <header class = "Header">HEADER</header>
+    <div class = "section1">
+    <div class = "content">CONTENT</div>
+    <div class = "aside">ASIDE</div>
+    </div>
+    <div class = "clear-fix"></div>
+    <div class = "section2">
+        <div class = "box">Box 1</div>
+        <div class = "box">Box 2</div>
+        <div class = "box">Box 3</div>
+        <div class = "box">Box 4</div>
+        <div class = "clear-fix"></div>
+    </div>
+    <footer class = "Footer">FOOTER</footer>
+</body>
+</html>
